@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #708090; /* Slate gray */
+}
+
+nav {
+  background: #3019e1;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+}
+/* ... your existing CSS ... */
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add some spacing between logo and menu */
+}
+
+nav .logo img {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
+}
+
+header, section {
+  padding: 60px 0;
+}
+
+#hero {
+  background: url('hero.png') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  height: 100vh; /* Set height to full viewport */
+  position: relative; /* Needed to position the footer */
+}
+
+#hero h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Arrange subsections vertically */
+}
+
+section {
+  padding: 60px 0;
+}
+
+#about, #lore, #socials {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+ul.social-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.social-links li {
+  margin: 5px 0;
+}
+
+ul.social-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul.social-links li a:hover {
+  color: #007BFF;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; /* Ensure footer is above hero */
+}
+
+.column {
+  width: 100%; /* Each column takes the full width */
+  padding: 20px;
+}
+
+.column.left {
+  /* Optional styling for the left column */
+}
+
+.column.right {
+  /* Optional styling for the right column */
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevents image from overflowing its container */
+}
+
+.lore-subsection {
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox for horizontal arrangement */
+  align-items: center; /* Vertically center content */
+}
+
+.lore-subsection.left {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.lore-subsection.right {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
